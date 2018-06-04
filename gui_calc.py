@@ -74,7 +74,7 @@ class Calc(Frame):
         self.button18=Button(self,text="C",command=self.c)
         self.button18.grid(row=5,column=2,sticky=E+W+N+S)
 
-        self.button19=Button(self,text="^",command=self.power)
+        self.button19=Button(self,text="**",command=self.power)
         self.button19.grid(row=5,column=3,sticky=E+W+N+S)
 
 
@@ -193,7 +193,7 @@ class Calc(Frame):
         
     def power(self):
 
-        Calc.string+="^"
+        Calc.string+="**"
         self.text.delete(0,END)
         self.text.insert(INSERT,Calc.string)
 
